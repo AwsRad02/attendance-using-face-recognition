@@ -9,14 +9,7 @@ import ssl
 #declare the firebase configration
 
 firebaseConfig = {
-  'apiKey': "AIzaSyDAyEfudZKQ7zZrKcHt4JNh3zRvcJTGGhM",
-  'authDomain': "yu-attendance.firebaseapp.com",
-  'projectId':"yu-attendance",
-  'storageBucket': "yu-attendance.appspot.com",
-  'messagingSenderId':"1053945043332",
-  'appId': "1:1053945043332:web:6a3fb660823e6e424225d1",
-  'measurementId': "G-XJFT9HJ8TW",
-'databaseURL' : ""
+  "use your own firebase configrations"
 }
 
 # initialize the firebase storage (connect)
@@ -119,11 +112,11 @@ class attendance :
 
     def send(self, std_num, std_email):
         port = 465  # For SSL
-        password = "oqbekykovygbmkgp"
+        password = "yourpassword"
 
         # Create a secure SSL context
         context = ssl.create_default_context()
-        sender_email = "yu.attend@gmail.com"
+        sender_email = "youremail@gmail.com"
 
         section_name =str(self.sectionName) + str(self.sectionId)
         absent_number = str(self.check_stdabsence(std_num))
